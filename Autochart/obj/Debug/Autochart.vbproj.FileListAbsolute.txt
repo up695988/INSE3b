@@ -1,0 +1,10 @@
+G:\Uni Work (yr2)\INSE\Visual\Autochart\bin\Debug\Autochart.exe.config
+G:\Uni Work (yr2)\INSE\Visual\Autochart\bin\Debug\Autochart.exe
+G:\Uni Work (yr2)\INSE\Visual\Autochart\bin\Debug\Autochart.pdb
+G:\Uni Work (yr2)\INSE\Visual\Autochart\bin\Debug\Autochart.xml
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\WindowsApplication1.Main.resources
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\WindowsApplication1.Resources.resources
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\Autochart.vbproj.GenerateResource.Cache
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\Autochart.exe
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\Autochart.xml
+G:\Uni Work (yr2)\INSE\Visual\Autochart\obj\Debug\Autochart.pdb
