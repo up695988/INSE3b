@@ -42,7 +42,7 @@ Public Class Main
         Dim TP As taskPanel = New taskPanel()
         TP.initialise()
         taskHolder.Controls.Add(TP)
-        taskAddPanel.Location = New Point(11, 75 + (taskNum * 32))
+        taskAddPanel.Location = New Point(10, 10 + (taskNum * 32))
 
     End Sub
 
