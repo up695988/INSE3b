@@ -1,0 +1,15 @@
+Init - "git init" is used to create a repository
+
+Status - "git status" tells us the state of our working directory
+
+List - "ls" Lists all files in directory
+
+Print working directory - "pwd" Prints current location in directory
+
+Add - "git add" tells git to track specific files or folders
+
+.gitignore - add file with no extension called ".gitignore" and files inside git will completely ignore e.g "installation/"
+
+Add all files - "git add ." tells git to track all files
+
+Commit changes - "git commit" applys all changes
