@@ -1,9 +1,13 @@
 ﻿Imports taskPanel
+Imports wbtSquare
 Public Class Main
 
-    Dim ArraySize As Integer = 5
+
     Dim taskPanel() As Panel
+    Dim wbtSquare() As Panel
     Dim taskNum As Integer = 0
+    Dim ArraySize As Integer = 5
+
 
     Private Sub Label1_Click(sender As Object, e As EventArgs)
 
@@ -32,17 +36,27 @@ Public Class Main
 
     End Sub
 
-    Private Sub taskDesc_TextChanged(sender As Object, e As EventArgs) Handles taskDesc.TextChanged
+    Private Sub taskDesc_TextChanged(sender As Object, e As EventArgs) Handles taskTitle.TextChanged
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles cmdAdd.Click
         ' DynamicArrayOfControls()
+
         taskNum = taskNum + 1
+        taskAddPanel.Location = New Point(10, 10 + (taskNum * 32))
+
+
         Dim TP As taskPanel = New taskPanel()
         TP.initialise()
         taskHolder.Controls.Add(TP)
-        taskAddPanel.Location = New Point(10, 10 + (taskNum * 32))
+
+
+        Dim wbtBox As wbtSquare = New wbtSquare()
+        wbtBox.initialise()
+        wbtPage.Controls.Add(wbtBox)
+
+        taskTitle.Text = "Enter task title"
 
     End Sub
 
@@ -76,7 +90,6 @@ Public Class Main
 
     Sub DynamicArrayOfControls()
         ReDim taskPanel(ArraySize)
-
         For i = 1 To ArraySize
             taskNum = taskNum + 1
             MsgBox("loop" + i.ToString)
@@ -84,7 +97,6 @@ Public Class Main
             With taskPanel(i)
                 .Name = "task" + taskNum.ToString
                 .Text = "task" + taskNum.ToString
-
                 .Visible = True
                 .Top = 10 + (32 * i)
                 .Left = 11
@@ -95,9 +107,12 @@ Public Class Main
             taskHolder.Controls.Add(taskPanel(i))
         Next
     End Sub
-
-
     Sub DynamicControls()
-
     End Sub
+
+    Function getWbtPageWidth()
+        Dim wbtPageWidth As Integer = wbtPage.Width
+        Return wbtPageWidth
+    End Function
+
 End Class

@@ -8,18 +8,13 @@ Public Class taskPanel
     Dim startDate As DateTimePicker = New DateTimePicker
     Dim endDate As DateTimePicker = New DateTimePicker
     Dim taskDesc As TextBox = New TextBox
-
-    Shared taskNum As Integer = 0
-    Shared numberOfBars As Integer = 0
-
+    Shared numberOfTasks As Integer = 0
 
     Sub initialise()
-        taskNum = taskNum + 1
-        numberOfBars = numberOfBars + 1
 
         With Me
             .Visible = True
-            .Top = 10 + (numberOfBars * 32)
+            .Top = 10 + (numberOfTasks * 32)
             .Left = 11
             .Width = 496
             .Height = 30
@@ -58,19 +53,19 @@ Public Class taskPanel
             .Height = 20
             .Width = 100
             .Top = 5
-            .Text = "Task Description"
+            .Text = Main.taskTitle.Text
         End With
 
         Me.Controls.Add(deleteBtn)
         Me.Controls.Add(startDate)
         Me.Controls.Add(endDate)
         Me.Controls.Add(taskDesc)
-
+        numberOfTasks = numberOfTasks + 1
     End Sub
 
     Private Sub delete(sender As Object, e As EventArgs) Handles deleteBtn.Click
         Me.Dispose()
-        numberOfBars = numberOfBars - 1
+        numberOfTasks = numberOfTasks - 1
 
     End Sub
 End Class

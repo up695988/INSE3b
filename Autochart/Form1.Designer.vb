@@ -29,7 +29,7 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.wbtPage = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class Main
         Me.endDateLabel = New System.Windows.Forms.Label()
         Me.startDateLabel = New System.Windows.Forms.Label()
         Me.selectTask = New System.Windows.Forms.RadioButton()
-        Me.taskDesc = New System.Windows.Forms.TextBox()
+        Me.taskTitle = New System.Windows.Forms.TextBox()
         Me.selectMilestone = New System.Windows.Forms.RadioButton()
         Me.startDate = New System.Windows.Forms.DateTimePicker()
         Me.cmdAdd = New System.Windows.Forms.Button()
@@ -110,7 +110,7 @@ Partial Class Main
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.wbtPage)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Location = New System.Drawing.Point(528, 13)
@@ -119,21 +119,21 @@ Partial Class Main
         Me.TabControl1.Size = New System.Drawing.Size(725, 627)
         Me.TabControl1.TabIndex = 19
         '
-        'TabPage2
+        'wbtPage
         '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(717, 387)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "WBT"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.wbtPage.Location = New System.Drawing.Point(4, 22)
+        Me.wbtPage.Name = "wbtPage"
+        Me.wbtPage.Padding = New System.Windows.Forms.Padding(3)
+        Me.wbtPage.Size = New System.Drawing.Size(717, 601)
+        Me.wbtPage.TabIndex = 1
+        Me.wbtPage.Text = "WBT"
+        Me.wbtPage.UseVisualStyleBackColor = True
         '
         'TabPage3
         '
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(717, 387)
+        Me.TabPage3.Size = New System.Drawing.Size(717, 601)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "PERT"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -167,7 +167,7 @@ Partial Class Main
         Me.taskAddPanel.Controls.Add(Me.endDateLabel)
         Me.taskAddPanel.Controls.Add(Me.startDateLabel)
         Me.taskAddPanel.Controls.Add(Me.selectTask)
-        Me.taskAddPanel.Controls.Add(Me.taskDesc)
+        Me.taskAddPanel.Controls.Add(Me.taskTitle)
         Me.taskAddPanel.Controls.Add(Me.selectMilestone)
         Me.taskAddPanel.Controls.Add(Me.startDate)
         Me.taskAddPanel.Controls.Add(Me.cmdAdd)
@@ -206,14 +206,14 @@ Partial Class Main
         Me.selectTask.Text = "Task"
         Me.selectTask.UseVisualStyleBackColor = True
         '
-        'taskDesc
+        'taskTitle
         '
-        Me.taskDesc.Location = New System.Drawing.Point(251, 29)
-        Me.taskDesc.Multiline = True
-        Me.taskDesc.Name = "taskDesc"
-        Me.taskDesc.Size = New System.Drawing.Size(100, 20)
-        Me.taskDesc.TabIndex = 3
-        Me.taskDesc.Text = "Task Description"
+        Me.taskTitle.Location = New System.Drawing.Point(251, 29)
+        Me.taskTitle.Multiline = True
+        Me.taskTitle.Name = "taskTitle"
+        Me.taskTitle.Size = New System.Drawing.Size(100, 20)
+        Me.taskTitle.TabIndex = 3
+        Me.taskTitle.Text = "Task Description"
         '
         'selectMilestone
         '
@@ -283,7 +283,7 @@ Partial Class Main
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents wbtPage As System.Windows.Forms.TabPage
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -294,7 +294,7 @@ Partial Class Main
     Friend WithEvents endDateLabel As System.Windows.Forms.Label
     Friend WithEvents startDateLabel As System.Windows.Forms.Label
     Friend WithEvents selectTask As System.Windows.Forms.RadioButton
-    Friend WithEvents taskDesc As System.Windows.Forms.TextBox
+    Friend WithEvents taskTitle As System.Windows.Forms.TextBox
     Friend WithEvents selectMilestone As System.Windows.Forms.RadioButton
     Friend WithEvents startDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents cmdAdd As System.Windows.Forms.Button
